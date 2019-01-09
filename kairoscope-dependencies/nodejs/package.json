@@ -1,0 +1,16 @@
+{
+  "name": "KairoScope-Node-Dependencies-Layer",
+  "version": "1.0.0",
+  "description": "The layer for KairoScope's node dependencies.",
+  "scripts": {},
+  "author": "Kevin W.",
+  "license": "MIT",
+  "dependencies": {
+    "@puresec/function-shield": "^1.2.2",
+    "aws-xray-sdk": "^2.1.0",
+    "jsonwebtoken": "^8.4.0",
+    "middy": "^0.19.4",
+    "mongo-sanitize": "^1.0.1",
+    "mongodb": "^3.1.10"
+  }
+}

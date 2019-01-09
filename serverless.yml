@@ -1,0 +1,21 @@
+service: lambda-layers
+
+provider:
+  name: aws
+  region: us-west-2
+
+layers:
+  kairoscopeDependencies:
+    path: kairoscope-dependencies
+    compatibleRuntimes:
+      - nodejs8.10
+    allowedAccounts: # optional, a list of AWS account IDs allowed to access this layer.
+      - '*'
+
+resources:
+  Outputs:
+    KairoscopeDependenciesLayerExport:
+      Value:
+        Ref: KairoscopeDependenciesLambdaLayer
+      Export:
+        Name: KairoscopeDependenciesLambdaLayer
