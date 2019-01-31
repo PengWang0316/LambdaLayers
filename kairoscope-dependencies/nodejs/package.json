@@ -6,11 +6,16 @@
   "author": "Kevin W.",
   "license": "MIT",
   "dependencies": {
-    "@puresec/function-shield": "^1.2.2",
-    "aws-xray-sdk": "^2.1.0",
+    "@kevinwang0316/cloudwatch": "^1.0.1",
+    "@kevinwang0316/jwt-verify": "^1.0.1",
+    "@kevinwang0316/log": "^1.0.1",
+    "@kevinwang0316/mongodb-helper": "^1.0.2",
+    "@puresec/function-shield": "^1.2.3",
+    "aws-xray-sdk": "^2.2.0",
     "jsonwebtoken": "^8.4.0",
-    "middy": "^0.19.4",
+    "middy": "^0.20.5",
     "mongo-sanitize": "^1.0.1",
-    "mongodb": "^3.1.10"
-  }
+    "mongodb": "^3.1.13"
+  },
+  "devDependencies": {}
 }
