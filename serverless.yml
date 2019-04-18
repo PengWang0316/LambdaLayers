@@ -12,6 +12,13 @@ layers:
     allowedAccounts: # optional, a list of AWS account IDs allowed to access this layer.
       - '*'
 
+  sscrgDependencies:
+    path: SSCRG-dependencies
+    compatibleRuntimes:
+      - nodejs8.10
+    allowedAccounts: # optional, a list of AWS account IDs allowed to access this layer.
+      - '*'
+
 resources:
   Outputs:
     KairoscopeDependenciesLayerExport:
@@ -19,3 +26,9 @@ resources:
         Ref: KairoscopeDependenciesLambdaLayer
       Export:
         Name: KairoscopeDependenciesLambdaLayer
+
+    SscrgDependenciesLayerExport:
+      Value:
+        Ref: SscrgDependenciesLambdaLayer
+      Export:
+        Name: SscrgDependenciesLambdaLayer
