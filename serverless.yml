@@ -19,6 +19,13 @@ layers:
     allowedAccounts: # optional, a list of AWS account IDs allowed to access this layer.
       - '*'
 
+  nintexDependencies:
+    path: Nintex-dependencies
+    compatibleRuntimes:
+      - nodejs8.10
+    allowedAccounts: # optional, a list of AWS account IDs allowed to access this layer.
+      - '*'
+
 resources:
   Outputs:
     KairoscopeDependenciesLayerExport:
@@ -32,3 +39,9 @@ resources:
         Ref: SscrgDependenciesLambdaLayer
       Export:
         Name: SscrgDependenciesLambdaLayer
+
+    NintexDependenciesLayerExport:
+      Value:
+        Ref: NintexDependenciesLambdaLayer
+      Export:
+        Name: NintexDependenciesLambdaLayer
