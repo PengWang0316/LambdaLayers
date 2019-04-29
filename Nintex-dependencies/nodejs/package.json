@@ -8,9 +8,9 @@
   "dependencies": {
     "@kevinwang0316/cloudwatch": "^1.0.4",
     "@kevinwang0316/jwt-verify": "^1.0.2",
-    "@kevinwang0316/lambda-middlewares": "^2.0.3",
+    "@kevinwang0316/lambda-middlewares": "^2.0.4",
     "@kevinwang0316/log": "^1.0.1",
-    "@kevinwang0316/mysql-helper": "^1.0.2",
+    "@kevinwang0316/mysql-helper": "^1.0.3",
     "@puresec/function-shield": "^1.2.4",
     "aws-xray-sdk": "^2.3.1",
     "axios": "^0.18.0",
